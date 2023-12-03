@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.center {
+    margin: 0;
+}
+
+.summary {
+    padding: 20px;
+}
+
+.experience {
+    padding: 20px;
+}body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.center {
+    margin: 0;
+}
+
+.summary {
+    padding: 20px;
+}
+
+.skills {
+    padding: 20px;
+}
+.experience {
+    padding: 20px;
+}
+
+.experience-stack {
+    overflow: hidden;
+}
+
+.certifications {
+    padding: 20px;
+}
+.job {
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.company {
+    font-weight: bold;
+}
+
+.tenure {
+    float: right;
+}
+
+
+.experience-stack {
+    overflow: hidden;
+}
+
+.job {
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.company {
+    font-weight: bold;
+}
+
+.tenure {
+    float: right;
+}
