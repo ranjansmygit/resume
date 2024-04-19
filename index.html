@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Resume SoumyaRanjanB</title>
+    <title>Portfolio Timeline</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1 class="center">SoumyaRanjan B</h1>
-        <p class="center">ranjan.smy@gmail.com</p>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
     <section class="summary">
         <h2>Professional Summary</h2>
         <p>Experienced Security Engineer Lead with a proven track record of developing and implementing effective security measures for organizations. Skilled in identifying potential security risks and designing and implementing security systems to mitigate risks in Web Application, Network and Cloud.</p>
@@ -43,82 +49,46 @@
             </dl>
         </ul>
     </section>
-    <section class="experience" id="experience">
-        <h2>Experience</h2>
-        <div class="experience-stack">
-            <div class="job">
-                <div class="company">Wipro</div>
-                <div class="tenure">May 2022 - Sep 2023</div>
-                <ul>
-                    <li>Integrated automated security testing into the CI/CD pipeline to identify vulnerabilities early in the development process. Leveraged AWS CodePipeline to trigger security scans using Amazon Inspector as part of the deployment process.</li>
-                    <li>Effectively communicated cloud security risks and best practices to stakeholders, highlighting the integration of AWS-specific security measures and Terraform-based automation for risk mitigation.</li>
-                    <li>Responded to technical RFPs by crafting detailed and persuasive proposals, addressing complex technical requirements and showcasing the company's expertise in API & DevOps security.</li>
-                    <li>Conducted technical presentations and demonstrations to showcase the benefits and capabilities of security solutions for web & mobile applications to both technical and senior management audiences.</li>
-                    <li>Managed the vulnerability assessment program, integrating CIS controls and mapping to NIST Cybersecurity Framework.</li>
-                </ul>
-            </div>
+<div class="timeline">
+    <div class="container left-container">
+        <img src="iamges/wipro.png">
+        <div class="text-box">2022</div>
+        <h2>ABC Corp</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nunc risus.</p>
+    </div>
+    <div class="container right-container">
+        <img src="iamges/infoblox.png">
+        <div class="text-box">2023</div>
+        <h2>XYZ Corp</h2>
+        <p>Aliquam erat volutpat. Vestibulum euismod justo sit amet est congue malesuada.</p>
+    </div>
+    <div class="container left-container">
+        <img src="iamges/cognizant.png">
+        <div class="text-box">2024</div>
+        <h2>Accen Corp</h2>
+        <p>Donec mollis velit eu est varius, in tempus sapien tempus. Vivamus eget justo vitae lectus maximus malesuada.</p>
+    </div>
+    <div class="container right-container">
+        <img src="iamges/accenture.png">
+        <div class="text-box">2020</div>
+        <h2>3i In</h2>
+        <p>Donec mollis velit eu est varius, in tempus sapien tempus. Vivamus eget justo vitae lectus maximus malesuada.</p>
+    </div>
+</div>
 
-            <div class="job">
-                <div class="company">Infoblox</div>
-                <div class="tenure">Jan 2021 - Apr 2022</div>
-                <ul>
-                    <li>Ensured security controls were embedded into the software development lifecycle in compliance with PCI DSS(V3.0) requirements.</li>
-                    <li>Integrated SAST tools, Checkmarx & Sonarqube with existing CI/CD that helped to identify and fix security issues during the development phase.</li>
-                    <li>Utilized automated scanning tools (Nessus, Qualys) to assess applications against CIS benchmarks and other relevant frameworks.</li>
-                    <li>Utilized AWS-native tools combined with Terraform-managed configurations to contain incidents, perform root cause analysis, and enforce preventive measures within AWS architectures.</li>
-                    <li>Led the implementation of CIS controls for securing cloud environments in AWS aligning with NIST Cybersecurity Framework.</li>
-                    <li>Conducted thorough vulnerability assessments for web applications and APIs, aligning with CIS Application Security Controls and mapping to NIST Cybersecurity Framework.</li>
-                </ul>
-            </div>
+<section class="certifications">
+    <h2>Certifications</h2>
+    <div class="certification">
+        <div class="title">ECSA</div>
+        <div class="title">CCNA</div>
+        <div class="title">RHCE</div>
+        <div class="title">CEH</div>
+    </div>
 
-            <div class="job">
-                <div class="company">Cognizant</div>
-                <div class="tenure">Aug 2018 - Dec 2020</div>
-                <ul>
-                    <li>Conducted regular penetration testing and vulnerability assessments of the organization's networks, and applications.</li>
-                    <li>Experienced in secure software development from design to implementation, following the Secure Software Development Life Cycle (SSDLC) framework. Managed the development process and integrated security testing and checks at each stage using tools such as Jira, GitHub, and Jenkins.</li>
-                    <li>Utilized Threat Modeling Tool, OWASP Threat Dragon, and STRIDE framework to systematically identify and prioritize threats. Proactively integrated threat modeling into design and development phases to prevent security vulnerabilities.</li>
-                    <li>Bullet point 3</li>
-                </ul>
-            </div>
-            <div class="job">
-                <div class="company">Schweickert India Pvt Ltd</div>
-                <div class="tenure">Jul 2017 - Jul 2018</div>
-                <ul>
-                    <li>Configured and drafted policies for Nessus, QualysGuard, Rapid7 to scan infrastructure & network security vulnerabilities.</li>
-                    <li>Implemented corrective actions and process improvements based on the audit findings to continually enhance the organization's information security posture.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <div class="company">Accenture</div>
-                <div class="tenure">Dec 2014 - Jul 2017</div>
-                <ul>
-                    <li>Worked on configuring and securing Infrastructures, including user and file permissions, firewall and network security.</li>
-                    <li>Experienced with common attack vectors and techniques, including privilege escalation, denial-of-service attacks, and malware.</li>
-                    <li>Performed security assessments on mobile applications to identify vulnerabilities related to data storage, network communication, and permissions.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <div class="company">3i Infotech</div>
-                <div class="tenure">May 2009 - Feb 2012</div>
-                <ul>
-                    <li>Implemented Linux security best practices, such as hardening and securing the boot process, securing network services, and implementing secure file systems.</li>
-                    <li>Created a BASH script to assist in vulnerability triage by categorizing and prioritizing vulnerabilities based on severity, asset criticality, and exploitability, streamlining the remediation process.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="certifications">
-        <h2>Certifications</h2>
-        <div class="certification">
-            <div class="title">ECSA</div>
-            <div class="title">CCNA</div>
-            <div class="title">RHCE</div>
-            <div class="title">CEH</div>
-        </div>
-
-        <div class="certification">
-    </section>
-    <script src="script.js"></script>
+    <div class="certification">
+</section>
+<footer>
+    <p>&copy; 2024 Your Portfolio. All rights reserved.</p>
+</footer>
 </body>
 </html>
