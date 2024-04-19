@@ -1,92 +1,212 @@
+/*
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #333;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    padding: 20px 40px;
+    margin: 20px 0;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    position: relative;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-left-color: #f4f4f4;
+    border-right: 0;
+    border-bottom: 0;
+    margin-top: -10px;
+}
+
+.timeline-item:last-child::after {
+    display: none;
+}
+
+.timeline-item:nth-child(even) {
+    background-color: #ddd;
+}
+
+.timeline-item .date {
+    font-weight: bold;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    .timeline::before {
+        left: 20px;
+    }
+}
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #574a4a;
+}
 header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
     text-align: center;
-    background-color: #f0f0f0;
-    padding: 20px;
 }
-
-.center {
+.summary{
+    background-color: #71b4a9;
+    color: white;
+    padding: 20px;
+    text-align: center; 
+}
+.skills{
+    padding: 20px 40px;
+    position: relative;
+    background: #50879f;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+header h1 {
     margin: 0;
 }
 
-.summary {
-    padding: 20px;
-}
-
-.experience {
-    padding: 20px;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+nav ul {
+    list-style-type: none;
     padding: 0;
 }
 
-header {
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.container{
+    padding: 20px 40px;
+    position: relative;
+    background: #fff;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown {
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.container:nth-child(1){
+    animation-delay: 0s;
+}
+.container:nth-child(2){
+    animation-delay: 1s;
+}
+.container:nth-child(3){
+    animation-delay: 2s;
+}
+.container:nth-child(4){
+    animation-delay: 3s;
+}
+.text-box{
+    padding: 10px 30px;
+    background: #5a4444;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.left-container{
+    left: 0;
+}
+.right-container{
+    left: 50%;
+}
+.container img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+.right-container img{
+    left: -20px;
+}
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+@media screen and (max-width: 600px){
+    .timeline{
+        margin: 50px auto;
+    }
+    .timeline::after{
+        left: 31px;
+    }
+    .container{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .text-box{
+        font-size: 13px;
+    }
+    .text-box small{
+        margin-bottom: 10px;
+    }
+    .right-container{
+        left: 0;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
     text-align: center;
-    background-color: #f0f0f0;
-    padding: 20px;
-}
-
-.center {
-    margin: 0;
-}
-
-.summary {
-    padding: 20px;
-}
-
-.skills {
-    padding: 20px;
-}
-.experience {
-    padding: 20px;
-}
-
-.experience-stack {
-    overflow: hidden;
-}
-
-.certifications {
-    padding: 20px;
-}
-.job {
-    margin-bottom: 20px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.company {
-    font-weight: bold;
-}
-
-.tenure {
-    float: right;
-}
-
-
-.experience-stack {
-    overflow: hidden;
-}
-
-.job {
-    margin-bottom: 20px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.company {
-    font-weight: bold;
-}
-
-.tenure {
-    float: right;
 }
